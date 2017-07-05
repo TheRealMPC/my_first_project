@@ -1,0 +1,30 @@
+.page-layout {
+  width: 1000px;
+  display: flex;
+  margin: auto;
+  padding-top: 5px;
+  text-align: justify;
+}
+
+.main-article {
+  flex: 1;
+}
+
+p {
+  line-height: 24px;
+}
+
+.image{
+  display: inline-flex;
+  vertical-align: middle;
+  margin: 10px 10px;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column wrap;
+  height: 200px;
+  width: 150px;
+}
+
+.footer{
+  text-align:center;
+}
