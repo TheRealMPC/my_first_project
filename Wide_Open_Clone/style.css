@@ -46,14 +46,18 @@ table {
   text-align: justify;
   margin: auto;
   width: 100vw;
-  height: 100vh;
-  background-image: url(/Users/mitchell/devmtn/week_1/Wide_Open_Clone/bg.jpg);
-  background-size: 100% 100%;
+  height: 75vh;
+  background-image: url('./bg.jpg');
+  background-size: 100%;
   background-repeat: no-repeat;
+	background-color: rgb(240,240,240);
+	overflow: hidden;
+	display: inline-flex;
 }
 
-.logo {
-  position: static;
+.nav-bar {
+  position: fixed;
+	overflow: visible;
   margin: 0 750px 135px 20px;
   padding: 15px 300px 150px 50px;
   float: right;
@@ -62,7 +66,7 @@ table {
 }
 
 .row {
-  display: inline-block;
+  /*display: flex;*/
   text-align: right;
   font-size: 32px;
 }
@@ -73,7 +77,7 @@ table {
   display: flex;
   /* padding: 0 14px 0 14px; */
   margin: 0 20px 0 0;
-  position: absolute;
+  position: fixed;
   right: 0;
   text-align: right;
   letter-spacing: 1px;
@@ -98,13 +102,68 @@ a:hover, a:active {
 }
 
 .logo-text{
-  display: inline-block;
+  display: block;
+	background: none;
   justify-content: center;
-  margin: 0 auto;
+  text-align: center;
+	color: #fff;
 }
 
 .article {
-  display: block;
   margin: auto;
+	overflow: auto;
   justify-content: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	width: 100vw;
+	height: 47vh;
+  font-family: 'Oswald', sans-serif;
+}
+
+.main{
+	font-size: 155px;
+	display: block;
+	align-content: center;
+}
+
+.sub{
+	display: block;
+}
+
+.sub1{
+	color: #ff803a;
+}
+
+.sub2{
+	color: #bdd436;
+}
+
+.button{
+	margin: 50px 450px 10px 450px;
+	border-radius: 15px 15px 15px 15px;
+	/*padding: 11px 36px 11px 36px;*/
+	background-color: #bdd436;
+	align-content: center;
+	justify-content: center;
+	width: 600px;
+	display: block;
+}
+
+.bottom {
+	display: inline-block;
+	color: #6A787C;
+	text-align: center;
+	justify-content: center;
+	font-size: 28px;
+	font-weight: 400;
+	background-color: rgb(240,240,240);
+	height: 25vh;
+	padding: 10px 125px 10px 125px;
+}
+
+.bottom-logo{
+	overflow: hidden;
+	display: inline-block;
+	align-content: center;
+	margin: 0 auto;
 }
